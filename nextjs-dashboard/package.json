@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@neondatabase/serverless": "^1.0.2",
     "@tailwindcss/forms": "^0.5.10",
     "autoprefixer": "10.4.20",
     "bcrypt": "^5.1.1",
@@ -19,6 +20,7 @@
     "react-dom": "latest",
     "tailwindcss": "3.4.17",
     "typescript": "5.7.3",
+    "undici": "^7.24.6",
     "use-debounce": "^10.0.4",
     "zod": "^3.25.17"
   },
