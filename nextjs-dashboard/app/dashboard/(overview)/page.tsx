@@ -8,6 +8,11 @@ import {
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export const runtime = 'nodejs';
  

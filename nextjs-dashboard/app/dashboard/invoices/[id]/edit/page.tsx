@@ -2,6 +2,12 @@ import Form from '@/app/ui/invoices/edit-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchInvoiceById, fetchCustomers } from '@/app/lib/data';
 import { notFound } from 'next/navigation';
+import { lusitana } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Edit Invoice',
+};
 
  
 export default async function Page(props: { params: Promise<{ id: string }> }) {
@@ -18,6 +24,9 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
   
   return (
     <main>
+      <div className="flex w-full items-center justify-between">
+        <h1 className={`${lusitana.className} text-2xl`}>Edit Invoice</h1>
+      </div>
       <Breadcrumbs
         breadcrumbs={[
           { label: 'Invoices', href: '/dashboard/invoices' },
